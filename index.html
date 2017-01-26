@@ -7,7 +7,10 @@
     <meta name="author" content=" FILL ME IN ">
     <title>Cameron Pittman: Portfolio</title>
     <!-- Add Cache-Control -->
- +  <meta http-equiv="Cache-control" content="public">
+ <!-- <meta http-equiv="Cache-control" content="public"> -->
+    <filesMatch ".(css|jpg|js)$">
+      Header set Cache-Control "max-age=86400, public"
+    </filesMatch>
     <!-- <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type='text/css'> -->
     <style>
       html {
